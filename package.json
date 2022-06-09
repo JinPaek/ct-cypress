@@ -1,0 +1,27 @@
+{
+  "name": "ct-cypress",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000c\u0000t\u0000-\u0000c\u0000y\u0000p\u0000r\u0000e\u0000s\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JinPaek/ct-cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JinPaek/ct-cypress/issues"
+  },
+  "homepage": "https://github.com/JinPaek/ct-cypress#readme",
+  "devDependencies": {
+    "cypress": "^10.0.3"
+  },
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.26.2"
+  }
+}
