@@ -3,9 +3,6 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
-variables:
-  APPLITOOLS_API_KEY: $(Applitools_API_Key) 
-
 trigger:
 - main
 
@@ -21,4 +18,6 @@ steps:
 - script: |
     npm ci
     npm test
+  env:
+    APPLITOOLS_APK_KEY: $(Applitools_API_KEY)
   displayName: 'Install dependencies and Run tests'
