@@ -21,4 +21,4 @@ steps:
 - script: |
     npm ci
     npm test
-  displayName: 'Install dependencies install and Run tests'
+  displayName: 'Install dependencies and Run tests'
