@@ -1,4 +1,4 @@
-describe('Search for books - eyes', () => {
+describe('Search for books - eyes rebase', () => {
     beforeEach(() => {
       cy.visit('https://automationbookstore.dev')
       cy.eyesOpen()
@@ -8,12 +8,12 @@ describe('Search for books - eyes', () => {
       cy.eyesClose()
     })
   
-    it('eyes should return one book with title Agile Testing', () => {
+    it('eyes should return one book with title Agile Testing - rebases', () => {
       cy.get('#searchBar').type('Agile Testing', {delay:250})
       cy.eyesCheckWindow()
     })
   
-    it('eyes should return multiple books with title Test', () => {
+    it('eyes should return multiple books with title Test - rebase', () => {
       cy.get('#searchBar').type('Test', {delay:250})
       cy.eyesCheckWindow()
     })
