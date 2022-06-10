@@ -1,6 +1,6 @@
 module.exports = {
 
-    apiKey: 'm0KF7SPXb0jBk2Cd5WGGHyO9DKiTT111jNX3YXCWDpFHE110',
+    apiKey: process.env.APPLITOOLS_API_KEY,
     appName: 'Test CT'
 
 }
