@@ -19,5 +19,5 @@ steps:
     npm ci
     npm test
   env:
-    APPLITOOLS_APK_KEY: $(Applitools_API_KEY)
+    APPLITOOLS_API_KEY: $(Applitools_API_KEY)
   displayName: 'Install dependencies and Run tests'
