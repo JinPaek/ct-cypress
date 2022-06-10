@@ -17,7 +17,7 @@ steps:
 
 - script: |
     npm ci
-    npm test
+    npx cypress run --browser chrome --headless
   env:
     APPLITOOLS_API_KEY: $(Applitools_API_KEY)
   displayName: 'Install dependencies and Run tests'
