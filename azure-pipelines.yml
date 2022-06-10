@@ -18,4 +18,4 @@ steps:
 - script: |
     npm ci
     npm test
-  displayName: 'npm install and build'
+  displayName: 'dependency install and run test'
