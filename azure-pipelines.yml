@@ -21,3 +21,11 @@ steps:
   env:
     APPLITOOLS_API_KEY: $(Applitools_API_KEY)
   displayName: 'Install dependencies and Run tests'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    searchFolder: '$(System.DefaultWorkingDirectory)/ct-cypress/results'
+    failTaskOnFailedTests: true
+    testRunTitle: 'End to End Tests'
