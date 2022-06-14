@@ -26,6 +26,6 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/TEST-*.xml'
-    searchFolder: '$(System.DefaultWorkingDirectory)/ct-cypress/results'
+    searchFolder: '$(System.DefaultWorkingDirectory)/results'
     failTaskOnFailedTests: true
     testRunTitle: 'End to End Tests'
