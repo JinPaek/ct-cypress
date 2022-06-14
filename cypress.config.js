@@ -1,10 +1,15 @@
 const { defineConfig } = require("cypress");
 
-module.exports = defineConfig({
+module.exports = defineConfig({  
+  reporter: 'junit',
+  reporterOptions: {
+      mochaFile: 'results/TEST-[hash].xml'
+    },
+    
   e2e: {
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config)
-    }
+    }    
   }
 });
 
